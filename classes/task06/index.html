@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="script.js" defer></script>
+    <style>
+        .notification-wrapper {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .notification {
+            padding: 10px 15px;
+            border-radius: 5px;
+            color: white;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+            position: relative;
+            transition: opacity 0.3s ease;
+        }
+
+        .notification.success {
+            background-color: #28a745;
+        }
+
+        .notification.error {
+            background-color: #dc3545;
+        }
+
+        .notification.warning {
+            background-color: #ffc107;
+            color: black;
+        }
+
+        .notification.info {
+            background-color: #007bff;
+        }
+
+        .notification-close {
+            position: absolute;
+            right: 8px;
+            top: 3px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+</body>
+</html>

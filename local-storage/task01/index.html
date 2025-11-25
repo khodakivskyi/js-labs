@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+<form>
+
+    <label>
+        Ім'я: <input type="text" name="firstName" required/>
+    </label>
+
+    <br/>
+
+    <fieldset>
+        <legend>Стать</legend>
+        <label><input type="radio" name="gender" value="male" required/> Чоловіча</label><br/>
+        <label><input type="radio" name="gender" value="female"/> Жіноча</label><br/>
+        <label><input type="radio" name="gender" value="other"/> Інша</label>
+    </fieldset>
+
+    <br/>
+
+    <fieldset>
+        <legend>Хобі</legend>
+        <label><input type="checkbox" name="hobbies" value="sport"/> Спорт</label><br/>
+        <label><input type="checkbox" name="hobbies" value="music"/> Музика</label><br/>
+        <label><input type="checkbox" name="hobbies" value="it"/> IT</label><br/>
+        <label><input type="checkbox" name="hobbies" value="travel"/> Подорожі</label>
+    </fieldset>
+
+
+    <br/>
+
+    <fieldset>
+        <legend>Ваша країна</legend>
+        <select name="country" required>
+            <option value="">Оберіть країну...</option>
+            <option value="ukraine">Україна</option>
+            <option value="poland">Польща</option>
+            <option value="germany">Німеччина</option>
+            <option value="usa">США</option>
+        </select>
+    </fieldset>
+
+
+    <br/>
+
+    <fieldset>
+        <legend>Коментар</legend>
+        <textarea name="comment" rows="5" cols="40" placeholder="Ваш коментар..."></textarea>
+    </fieldset>
+</form>
+</body>
+</html>

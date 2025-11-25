@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="script.js" defer></script>
+    <style>
+        .form{
+            display: flex;
+            flex-direction: row;
+            gap: 6px;
+        }
+
+        .images-small img{
+            width: 50px;
+            height: 50px;
+        }
+
+        .images-big img{
+            display: none;
+        }
+
+        img.current{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div class="form">
+    <input type="text">
+    <button onclick="showImages()">Показати</button>
+</div>
+<div class="message"></div>
+<div class="images">
+    <div class="images-small"></div>
+    <div class="images-big"></div>
+</div>
+</body>
+</html>
